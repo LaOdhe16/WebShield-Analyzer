@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto px-6 md:px-12 py-16">
+    <div class="border-b border-zinc-200 pb-8 mb-10">
+        <h1 class="text-4xl font-black text-zinc-900 tracking-tight">Dokumentasi & Arsitektur</h1>
+        <p class="mt-3 text-zinc-500">Spesifikasi teknis dan regulasi penggunaan WebShield Analyzer.</p>
+    </div>
+    
+    <div class="prose max-w-none text-zinc-600 leading-relaxed">
+        <p class="text-lg">WebShield Analyzer dibangun menggunakan arsitektur Python/Flask modern, dikombinasikan dengan teknik intelijen siber (Cyber Intelligence) berbasis API dan HTTP Request.</p>
+        
+        <h2 class="text-2xl font-bold text-zinc-900 mt-12 mb-6 tracking-tight">Metodologi Analisis</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="border border-zinc-200 p-6 rounded bg-zinc-50">
+                <h3 class="text-sm font-bold text-zinc-900 uppercase tracking-widest mb-3">OSINT Pasif</h3>
+                <p class="text-sm text-zinc-600">Mengumpulkan data dari arsip publik (crt.sh, VirusTotal, Wayback Machine, WHOIS) tanpa melakukan interaksi langsung yang dicurigai oleh firewall server target.</p>
+            </div>
+            <div class="border border-zinc-200 p-6 rounded bg-zinc-50">
+                <h3 class="text-sm font-bold text-zinc-900 uppercase tracking-widest mb-3">Scanning Aktif</h3>
+                <p class="text-sm text-zinc-600">Melakukan request HTTP standar untuk membaca struktur header, mendeteksi CMS, dan memindai port terbuka dengan toleransi timeout 0.5s untuk efisiensi.</p>
+            </div>
+        </div>
+
+        <div class="mt-16 border-l-4 border-zinc-900 pl-6 py-2">
+            <h3 class="font-black text-zinc-900 text-xl tracking-tight mb-2">Penafian Hukum (Legal Disclaimer)</h3>
+            <p class="text-sm text-zinc-500">Alat ini dikembangkan murni untuk tujuan edukasi dan pertahanan siber. Pengguna setuju untuk menggunakan perangkat lunak ini hanya pada sistem yang mereka miliki atau memiliki otorisasi penuh untuk memindainya. Pengembang tidak bertanggung jawab atas aktivitas ilegal yang dilakukan menggunakan alat ini.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

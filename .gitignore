@@ -1,0 +1,21 @@
+# Environments
+.env
+venv/
+env/
+ENV/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Docker
+.dockerignore
+
+# Mac/Windows junk files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/

@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-6 md:px-12 py-24">
+    <div class="text-center max-w-4xl mx-auto mb-28">
+        <div class="inline-block border border-zinc-200 text-zinc-500 text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-8">
+            Platform Analisis Keamanan v4.0
+        </div>
+        <h1 class="text-5xl md:text-7xl font-black text-zinc-900 mb-8 tracking-tight leading-tight">
+            Analisis Keamanan Web <br><span class="text-zinc-300">Dalam Satu Klik.</span>
+        </h1>
+        <p class="text-lg text-zinc-500 mb-10 leading-relaxed max-w-2xl mx-auto">
+            Platform intelijen sumber terbuka (OSINT) dan pemindai kerentanan web tingkat lanjut. Dirancang khusus untuk Analis Keamanan, Bug Hunter, dan Administrator Sistem.
+        </p>
+        <div class="flex justify-center gap-4">
+            <a href="/scanner" class="bg-zinc-900 text-white px-8 py-4 rounded hover:bg-zinc-800 transition shadow-lg font-bold text-sm tracking-wide">
+                Buka Scanner
+            </a>
+            <a href="/about" class="bg-white text-zinc-900 border border-zinc-300 px-8 py-4 rounded hover:bg-zinc-50 transition shadow-sm font-bold text-sm tracking-wide">
+                Baca Dokumentasi
+            </a>
+        </div>
+    </div>
+
+    <div class="border-t border-zinc-100 pt-20">
+        <div class="text-center mb-16">
+            <h2 class="text-sm font-bold tracking-widest text-zinc-400 uppercase">Modul Analisis Inti</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+            
+            <div class="group">
+                <svg class="w-8 h-8 text-zinc-400 group-hover:text-zinc-900 transition-colors mb-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                <h3 class="text-lg font-bold mb-3 text-zinc-900">Network & Geo-Intelligence</h3>
+                <p class="text-zinc-500 text-sm leading-relaxed">Melacak alamat IP asli server, lokasi geografis, ISP, hingga mendeteksi *Tech Stack* dan CMS yang digunakan target.</p>
+            </div>
+
+            <div class="group">
+                <svg class="w-8 h-8 text-zinc-400 group-hover:text-zinc-900 transition-colors mb-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                <h3 class="text-lg font-bold mb-3 text-zinc-900">Vulnerability Mitigation</h3>
+                <p class="text-zinc-500 text-sm leading-relaxed">Mendeteksi hilangnya HTTP Security Headers (HSTS, CSP) dan memberikan panduan mitigasi langsung dari dokumentasi OWASP/MDN.</p>
+            </div>
+
+            <div class="group">
+                <svg class="w-8 h-8 text-zinc-400 group-hover:text-zinc-900 transition-colors mb-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016zM12 9v2m0 4h.01"></path></svg>
+                <h3 class="text-lg font-bold mb-3 text-zinc-900">Threat & Malware Reputation</h3>
+                <p class="text-zinc-500 text-sm leading-relaxed">Terintegrasi langsung dengan API VirusTotal untuk memastikan domain target bersih dari database malware dan indikasi phishing.</p>
+            </div>
+
+            <div class="group">
+                <svg class="w-8 h-8 text-zinc-400 group-hover:text-zinc-900 transition-colors mb-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                <h3 class="text-lg font-bold mb-3 text-zinc-900">Advanced OSINT Discovery</h3>
+                <p class="text-zinc-500 text-sm leading-relaxed">Mencari subdomain tersembunyi menggunakan Certificate Transparency Logs (crt.sh) dan melacak data WHOIS registrar.</p>
+            </div>
+
+            <div class="group">
+                <svg class="w-8 h-8 text-zinc-400 group-hover:text-zinc-900 transition-colors mb-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                <h3 class="text-lg font-bold mb-3 text-zinc-900">Open Ports & Sensitive Files</h3>
+                <p class="text-zinc-500 text-sm leading-relaxed">Pemindai port super cepat (FTP, SSH, Database) dan pelacak file terekspos seperti /.env atau /robots.txt.</p>
+            </div>
+
+            <div class="group">
+                <svg class="w-8 h-8 text-zinc-400 group-hover:text-zinc-900 transition-colors mb-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                <h3 class="text-lg font-bold mb-3 text-zinc-900">Email Spoofing Check (DNS)</h3>
+                <p class="text-zinc-500 text-sm leading-relaxed">Menganalisis DNS Records (SPF & DMARC) untuk melihat apakah domain rentan digunakan untuk penipuan email spoofing.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
